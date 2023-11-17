@@ -115,3 +115,19 @@ function scrollActive() {
 }
 
 window.addEventListener('scroll', scrollActive)
+
+
+
+    // Tambahkan animasi dengan JavaScript Image
+    const gallery = document.getElementById('gallery');
+    const images = gallery.querySelectorAll('.gallery-image');
+
+    images.forEach(image => {
+      image.addEventListener('mouseover', () => {
+        image.style.transform = 'scale(1.2)';
+      });
+
+      image.addEventListener('mouseout', () => {
+        image.style.transform = 'scale(1)';
+      });
+    });

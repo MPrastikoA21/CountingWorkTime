@@ -636,3 +636,30 @@ footer{
         width: 100%;
     }
 }
+/*  IMAGE */
+ .gallery-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .gallery-image {
+      width: 390px;
+      height: 390px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin: 0 10px;
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .gallery-image:hover {
+      transform: scale(1.1); /* Efek zoom saat hover */
+    }
+    
