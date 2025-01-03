@@ -151,7 +151,7 @@
     <div class="container">
         <div class="stars"></div>
         <div class="city"></div>
-        <h1 class="title">NIGHT CITY</h1>
+        <h1 class="title">Remaining Working Time</h1>
         <div class="target-date" id="targetDate"></div>
         <div class="countdown">
             <div class="countdown-item">
@@ -202,6 +202,7 @@
             targetDate.setDate(targetDate.getDate() + 141);  // Add 141 days
             
             // Display target date
+            document.getElementById('targetDate').textContent = "Marcel Prastiko Arthana:\n"
             document.getElementById('targetDate').textContent = "Tanggal Target:\n" + formatDate(targetDate);
             
             const currentTime = new Date();
